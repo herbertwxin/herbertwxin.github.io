@@ -1,15 +1,15 @@
 ---
-external: false
 title: "Fedora Silverblue Setup Guide"
 description: "Here are some steps I would take after installing Fedora Silverblue"
-date: 2023-12-25
+pubDate: 2023-12-25
+tags: ["Fedora"]
 ---
 
 *Feel free to contact me if you have any question with these instructions! Either through email or on the website's GitHub repository.*
 
 > Many of the contents here are borrowed from [Willi Mutschler](https://mutschler.dev/linux/fedora-post-install/#). However, since I work with Fedora Silverblue rather than Fedora Workstation, many of the installation steps would be different due to the immutable nature of Silverblue. For that reason, I think this post would still show it's value.  
 
-The version used is Fedora Silverblue 39 at the time this post is written. Most of the softwares are probably more personal and economists-oriented. 
+The version used is Fedora Silverblue 39 at the time this post is written. Most of the softwares are probably more personal and economists-oriented.
 
 ## Background Info for Silverblue
 
@@ -25,7 +25,7 @@ It is generally recommended to add Flathub repo to gain access to more applicati
 
 ### Toolbox
 
-Toolbox creates an isolated container to install packages and softwares, it is almost like a emulator of the host system, or like a self-contained system that is attached to the host system. 
+Toolbox creates an isolated container to install packages and softwares, it is almost like a emulator of the host system, or like a self-contained system that is attached to the host system.
 
 To create a toolbox, you can use the command:
 
@@ -57,11 +57,11 @@ To uninstall a layered package:
 rpm-ostree uninstall [package name]
 ```
 
-## Graphics 
+## Graphics
 
 ### Wayland & Xorg
 
-Fedora uses Wayland as default and will depreciate Xorg gradually, but in practice the experience is quite awful if you have a Nvidia card with drivers not properly set up. However, lately advancement from Nvidia side has made Wayland quite usable, providing you installed all the drivers. 
+Fedora uses Wayland as default and will depreciate Xorg gradually, but in practice the experience is quite awful if you have a Nvidia card with drivers not properly set up. However, lately advancement from Nvidia side has made Wayland quite usable, providing you installed all the drivers.
 
 #### Use Xorg
 
@@ -74,30 +74,30 @@ sudo nano /etc/gdm/custom.conf
 # DefaultSession=gnome-xorg.desktop
 
 # Cuda libs for Xorg
-rpm-ostree install xorg-x11-drv-nvidia-cuda 
+rpm-ostree install xorg-x11-drv-nvidia-cuda
 rpm-ostree install xorg-x11-drv-nvidia-cuda-libs
 ```
 
-And then reboot for the change to take effect. 
+And then reboot for the change to take effect.
 
 #### Nvidia & Wayland
 
 To install the proprietary Nvidia driver
 
-```bash 
+```bash
 rpm-ostree update
 
 # Nvidia proprieatary driver
 rpm-ostree install akmod-nvidia
 
-# The Nvidia proprieatary driver doesn't support VAAPI, but there is a wrapper that can bridge NVDEC/NVENC with VAAPI 
+# The Nvidia proprieatary driver doesn't support VAAPI, but there is a wrapper that can bridge NVDEC/NVENC with VAAPI
 rpm-ostree install nvidia-vaapi-driver
 
 # Provides more codec for video streaming
 rpm-ostree install libavcodec-freeworld
 ```
 
-After all the installations, follow the instruction and reboot the system 
+After all the installations, follow the instruction and reboot the system
 
 ```bash
 systemctl reboot
@@ -107,9 +107,9 @@ systemctl reboot
 
 ### Foliate
 
-I really like this handy software to read my `.epub` books, but it has some problem accessing the graphics card or some sort, resulting in the page not being able to render properly. I think the problem mostly lies with the fact of lack of permission. 
+I really like this handy software to read my `.epub` books, but it has some problem accessing the graphics card or some sort, resulting in the page not being able to render properly. I think the problem mostly lies with the fact of lack of permission.
 
-The simplest way to fix this issue is to disable GPU acceleration for Foliate, to do that. 
+The simplest way to fix this issue is to disable GPU acceleration for Foliate, to do that.
 
 1.  Install `Flatseal` either by GUI or command line
 2. Disable the **GPU acceleration** option for Foliate
@@ -121,7 +121,7 @@ Since **Foliate** is not a very demanding software, even without GPU acceleratio
 
 #### Installation
 
-Always refer to the [official installation guide](https://au.mathworks.com/help/pdf_doc/install/install_guide.pdf) for more info. 
+Always refer to the [official installation guide](https://au.mathworks.com/help/pdf_doc/install/install_guide.pdf) for more info.
 
 1. After the downloading the MATLAB installation file, unzip it with
 
@@ -129,13 +129,13 @@ Always refer to the [official installation guide](https://au.mathworks.com/help/
    	unzip matlab_R2023b_glnxa64.zip -d matlab_R2023b_glnxa64
    ```
 
-2. Navigate to `matlab_R2023b_glnxa64` directory and launch the installer with 
+2. Navigate to `matlab_R2023b_glnxa64` directory and launch the installer with
 
    ```bash
    ./install
    ```
 
-3. Install MATLAB under `/var` directory so you have full permission, the way I do it is 
+3. Install MATLAB under `/var` directory so you have full permission, the way I do it is
 
    ```bash
    /var/home/$USER/bin
@@ -162,11 +162,11 @@ MimeType=text/x-matlab
 
 #### Libraries
 
-Although [Willi Mutschler](https://mutschler.dev/linux/fedora-post-install/#) suggests that it is better to use system libraries instead of MATLAB's shipped libraries, as it solves most issues with MATLAB. During my experiment, this is not the case as with Silverblue, MATLAB does not have the access to system level files and is unable to utilize the system libraries. Thus, there is no need to exclude the shipped packages with MATLAB, in fact, you need to copy some packages from system to MATLAB directories for Dynare to work properly, as it cannot access system level file either. 
+Although [Willi Mutschler](https://mutschler.dev/linux/fedora-post-install/#) suggests that it is better to use system libraries instead of MATLAB's shipped libraries, as it solves most issues with MATLAB. During my experiment, this is not the case as with Silverblue, MATLAB does not have the access to system level files and is unable to utilize the system libraries. Thus, there is no need to exclude the shipped packages with MATLAB, in fact, you need to copy some packages from system to MATLAB directories for Dynare to work properly, as it cannot access system level file either.
 
 ### Dynare
 
-Dynare needs to be compiled from source on a Fedora-based system, and the method to do it is slightly different in Silverblue. 
+Dynare needs to be compiled from source on a Fedora-based system, and the method to do it is slightly different in Silverblue.
 
 #### Fundamental packages
 
@@ -229,7 +229,7 @@ ninja -C build-matlab
 meson install -C build-matlab
 ```
 
-These steps shall give you a nearly workable Dynare, expect now it needs the latest `libstdc++.so.6` and `libstdc++.so.6.0.32` packages shipped with the system. As I mentioned before, Silverblue makes MATLAB lack the access to use the system shipped packages, rather, we have to rely on those shipped with MATLAB. 
+These steps shall give you a nearly workable Dynare, expect now it needs the latest `libstdc++.so.6` and `libstdc++.so.6.0.32` packages shipped with the system. As I mentioned before, Silverblue makes MATLAB lack the access to use the system shipped packages, rather, we have to rely on those shipped with MATLAB.
 
 To do this, we first move the `libstdc++.so.6` and `libstdc++.so.6.0.32` packages came with MATLAB to an exclude folder and the copy-paste the one from our system into MATLAB.
 
@@ -247,9 +247,9 @@ This should give you a running Dynare, simply add Dynare into the directory in M
 
 ### LaTeX
 
-I use LaTeX with VSCode for all my writings, but to use this combo is a bit harder in Silverblue. My approach is to install LaTeX in a toolbox and then let VSCode (and LaTeX Workshop) communicate with LaTeX stored inside the toolbox. 
+I use LaTeX with VSCode for all my writings, but to use this combo is a bit harder in Silverblue. My approach is to install LaTeX in a toolbox and then let VSCode (and LaTeX Workshop) communicate with LaTeX stored inside the toolbox.
 
-#### Install TeX Live 
+#### Install TeX Live
 
 ```bash
 # Create the LaTeX container
@@ -262,7 +262,7 @@ sudo dnf config-manager --add-repo https://mirrors.tuna.tsinghua.edu.cn/texlive/
 # Instal the package
 sudo dnf install texlive texlive-scheme-full texlive-extra-utils
 
-# Update the packages 
+# Update the packages
 sudo dnf update texlive*
 
 # Verify the installation
@@ -277,7 +277,7 @@ After installing VSCode, use the extension shop to install LaTeX Workshop extens
 
 Once LaTeX Workshop is install, we need to configure it so that it can communicate with LaTeX in the toolbox, for that, we need to edit the `settings.json` of VSCode
 
-Change the corresponding entries in the `settings.json` to be 
+Change the corresponding entries in the `settings.json` to be
 
 ```json
 // Only if you use LaTeX Utilities extension for word count etc.
@@ -481,14 +481,3 @@ Change the corresponding entries in the `settings.json` to be
 ```
 
 This would allow LaTeX Workshop to communicate with LaTeX.
-
-
-
-
-
-
-
-
-
-
-
