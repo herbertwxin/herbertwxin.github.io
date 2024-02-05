@@ -3,7 +3,6 @@ title: "Kornai (1979) Framework on Autocratic Governance"
 description: "A comment on Kornai (1979) where I found similarities between socialist firms and autocratic local governments"
 pubDate: 2024-02-05
 tags: ["Political", "Rant"]
-import { Image } from 'astro:assets';
 ---
 
 ## Introduction
@@ -20,6 +19,8 @@ As the nature of all autocratic system, local government officials are appointed
 This lack of incentive occurs even when the central government’s ultimate goal is to benefit the populace, as any policy relies on local government’s implementation. With its hard constraint bounded by the populace, local government has to achieve the policy in a way that is generally agreed by the resident, where autocratic local governments, who’s hard constraint is bounded by the central government, the policy can executed in any form, as long as it achieves the target. 
 
 The aforementioned idea could be illustrated using my mushroom-shaped flowchart.
+
+![Mushroom Flowchart](/Mushroom.png)
 
 As one could see from the chart, the local government has the ruling power towards the people, while its primary responsibility is not tied with the needs of people. Local government only has a secondary responsibility towards the populace, i.e. the people influence the central government, which governs the local government. 
 
