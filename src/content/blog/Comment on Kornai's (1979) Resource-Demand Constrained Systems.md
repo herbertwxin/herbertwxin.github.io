@@ -7,7 +7,7 @@ tags: ["Political", "Rant"]
 
 ## Introduction
 
-After randomly came across Kornai’s work on “Resource-Constrained versus Demand-Constrained System” (1979), I realized it idea of soft/hard budget constraint displays a very neat framework to explain why autocratic government, especially the local government, often deviates from the demand of populace.
+After randomly came across Kornai’s work on *“Resource-Constrained versus Demand-Constrained System” (1979)*, I realized it idea of soft/hard budget constraint displays a very neat framework to explain why autocratic government, especially the local government, often deviates from the demand of populace.
 
 In Kornai’s work, he suggests that firms in socialist systems are only subject to soft budget constraints, i.e. the loss from investment does not damage the financial ability of the firm as it is owned by the state. Whereas in capitalist system, firms are immediately constrained by demands from the market, avoiding overly occupying social resources. In all circumstances, however, firms prioritize the most immediate constraint as it decides the survival of the firm. Thus, socialist firms suffer from “investment hunger”, which relentlessly push for expansion regardless of actual market demands or the efficient use of resources to maintain state support till the exhaustion of resources, creating shortages.
 
@@ -18,7 +18,7 @@ As the nature of all autocratic system, local government officials are appointed
 
 This lack of incentive occurs even when the central government’s ultimate goal is to benefit the populace, as any policy relies on local government’s implementation. With its hard constraint bounded by the populace, local government has to achieve the policy in a way that is generally agreed by the resident, where autocratic local governments, who’s hard constraint is bounded by the central government, the policy can executed in any form, as long as it achieves the target. 
 
-The aforementioned idea could be illustrated using my mushroom-shaped flowchart.
+The aforementioned idea could be illustrated using my **mushroom-shaped flowchart**.
 
 ![Mushroom Flowchart](/Mushroom.png)
 
