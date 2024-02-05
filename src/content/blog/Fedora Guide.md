@@ -2,7 +2,7 @@
 title: "Fedora Silverblue Setup Guide"
 description: "Here are some steps I would take after installing Fedora Silverblue"
 pubDate: 2023-12-25
-tags: ["Fedora"]
+tags: ["Fedora", "Linux"]
 ---
 
 *Feel free to contact me if you have any question with these instructions! Either through email or on the website's GitHub repository.*
