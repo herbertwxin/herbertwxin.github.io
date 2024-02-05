@@ -21,8 +21,6 @@ This lack of incentive occurs even when the central government’s ultimate goal
 
 The aforementioned idea could be illustrated using my mushroom-shaped flowchart.
 
-![Mushroom Flowchart](/Mushroom.png)
-
 As one could see from the chart, the local government has the ruling power towards the people, while its primary responsibility is not tied with the needs of people. Local government only has a secondary responsibility towards the populace, i.e. the people influence the central government, which governs the local government. 
 
 Such detachment between local government’s responsibility and power has caused issues like the overly stringent lock-down policy during the COVID-19 era in China. The ultimate goal of the central government is to reduce the number of cases, which is certainly not wrong. However, since local government has no incentive to benefit its people, especially during such urgent event, it takes every measure at any cost to eliminate any possibility of COVID spreading, which, of course, includes killing dogs during break-in home COVID tests and leaving people that are suspect to be infected in Fangcang Hospital without any actual treatment. These measures obviously harms the welfare of general public and it does not matter as local government’s primary responsibility, the one that decides the political career of local governor, is to fulfill the goal of the superior. 
