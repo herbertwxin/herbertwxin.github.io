@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'green-uo': '#154733',
+				'green-uo': '#007030',
+				'author': '#E2E11B',
 			},
 		},
 	},
