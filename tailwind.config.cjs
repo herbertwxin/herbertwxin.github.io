@@ -5,7 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				'green-uo': '#007030',
-				'author': '#E2E11B',
+				'journal': '#004f6e',
 			},
 		},
 	},
