@@ -6,9 +6,9 @@ tags: Fedora, Linux
 categories: Guide
 ---
 
-*Feel free to contact me if you have any question with these instructions! Either through email or on the website's GitHub repository.*
+_Feel free to contact me if you have any question with these instructions! Either through email or on the website's GitHub repository._
 
-> Many of the contents here are borrowed from [Willi Mutschler](https://mutschler.dev/linux/fedora-post-install/#). However, since I work with Fedora Silverblue rather than Fedora Workstation, many of the installation steps would be different due to the immutable nature of Silverblue. For that reason, I think this post would still show it's value.  
+> Many of the contents here are borrowed from [Willi Mutschler](https://mutschler.dev/linux/fedora-post-install/#). However, since I work with Fedora Silverblue rather than Fedora Workstation, many of the installation steps would be different due to the immutable nature of Silverblue. For that reason, I think this post would still show it's value.
 
 The version used is Fedora Silverblue 39 at the time this post is written. Most of the softwares are probably more personal and economists-oriented.
 
@@ -18,7 +18,7 @@ Silverblue differs from the normal Fedora Workstation as it is immutable, meanin
 
 This means Silverblue needs to install applications and packages differently from Workstation, i.e. `dnf install` will not work, more specifically, there are 3 ways to do it.
 
-###  Flatpak
+### Flatpak
 
 Flatpak is the predominant way to install applications, as it places each application into a sandbox, aligning with the immutable approach of the Silverblue.
 
@@ -66,7 +66,7 @@ Fedora uses Wayland as default and will depreciate Xorg gradually, but in practi
 
 #### Use Xorg
 
-By using Xorg session, I can solve most displaying issues with VSCode and Obsidian (Both installed through Flatpak).  To use Xorg instead of Wayland, uncomment `WaylandEnable=false` and add `DefaultSession=gnome-xorg.desktop` to the [daemon] section of `/etc/gdm/custom.conf`
+By using Xorg session, I can solve most displaying issues with VSCode and Obsidian (Both installed through Flatpak). To use Xorg instead of Wayland, uncomment `WaylandEnable=false` and add `DefaultSession=gnome-xorg.desktop` to the [daemon] section of `/etc/gdm/custom.conf`
 
 ```bash
 sudo nano /etc/gdm/custom.conf
@@ -113,8 +113,8 @@ I really like this handy software to read my `.epub` books, but it has some prob
 The simplest way to fix this issue is to disable GPU acceleration for Foliate, to do that.
 
 1.  Install `Flatseal` either by GUI or command line
-2. Disable the **GPU acceleration** option for Foliate
-3. Problem fixed!
+2.  Disable the **GPU acceleration** option for Foliate
+3.  Problem fixed!
 
 Since **Foliate** is not a very demanding software, even without GPU acceleration the whole thing runs smoothly enough for me to not search for other solutions.
 
