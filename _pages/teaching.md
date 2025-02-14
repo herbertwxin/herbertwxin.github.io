@@ -11,7 +11,7 @@ nav_order: 6
 
 ## 2025
 
-TA for EC201 - Introductory microeconomics
+TA for EC201 Introductory microeconomics
 
 ## 2024
 
@@ -20,4 +20,4 @@ TA for EC101
 # University of Sydney
 
 ## 2024
-TA for ECON1002 -  Introductory macroeconomics
+TA for ECON1002 Introductory macroeconomics
