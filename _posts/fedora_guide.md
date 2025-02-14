@@ -122,7 +122,7 @@ Since **Foliate** is not a very demanding software, even without GPU acceleratio
 
 #### Installation
 
-Always refer to the [official installation guide](https://au.mathworks.com/help/pdf_doc/install/install_guide.pdf) for more info.
+Always refer to the official installation guide for more info.
 
 1. After the downloading the MATLAB installation file, unzip it with
 
