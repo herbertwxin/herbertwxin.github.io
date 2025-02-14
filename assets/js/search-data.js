@@ -90,6 +90,28 @@ ninja.data = [{
           window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
         
       },
+    },{id: "post-kornai-1979-framework-on-autocratic-governance",
+      
+        title: "Kornai (1979) Framework on Autocratic Governance",
+      
+      description: "A comment on Kornai (1979) where I found similarities between socialist firms and autocratic local governments",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/konai_comment/";
+        
+      },
+    },{id: "post-fedora-silverblue-setup-guide",
+      
+        title: "Fedora Silverblue Setup Guide",
+      
+      description: "Here are some steps I would take after installing Fedora Silverblue",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2023/fedora_guide/";
+        
+      },
     },{id: "post-displaying-external-posts-on-your-al-folio-blog",
       
         title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
