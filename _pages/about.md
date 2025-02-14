@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-# New template used!! Still updating all the info
+New template used!! Still updating all the info
 
 This is my personal website where I rant about my thoughts on economic and social issues.
 My current research interest focuses on the interaction between fiscal and monetary policy.
