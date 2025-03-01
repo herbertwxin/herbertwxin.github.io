@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Fedora Silverblue Setup Guide"
 description: Here are some steps I would take after installing Fedora Silverblue
 pubDate: 2023-12-25

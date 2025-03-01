@@ -28,8 +28,26 @@
       "url": "https://www.uoregon.edu/",
       "area": "Economics",
       "studyType": "PhD",
-      "startDate": "2028-06-01",
-      "endDate": "2024-09-30"
+      "startDate": "2024-09-01",
+      "endDate": "2028-06-01"
+    },
+    {
+      "institution": "University of Sydney",
+      "location": "Sydney, Australia",
+      "url": "https://www.sydney.edu.au/",
+      "area": "Economic Analysis",
+      "studyType": "Master",
+      "startDate": "2022-09-01",
+      "endDate": "2023-12-30"
+    },
+    {
+      "institution": "University of New South Wales",
+      "location": "Sydney, Australia",
+      "url": "https://www.unsw.edu.au/",
+      "area": "Economic and Statistics",
+      "studyType": "Bachelor",
+      "startDate": "2018-02-01",
+      "endDate": "2021-12-30"
     }
   ],
   "publications": [
