@@ -6,7 +6,7 @@ tags: Fedora, Linux
 categories: Guide
 ---
 
-_Feel free to contact me if you have any question with these instructions! Either through email or on the website's GitHub repository._
+Feel free to contact me if you have any question with these instructions! Either through email or on the website's GitHub repository.
 
 > Many of the contents here are borrowed from [Willi Mutschler](https://mutschler.dev/linux/fedora-post-install/#). However, since I work with Fedora Silverblue rather than Fedora Workstation, many of the installation steps would be different due to the immutable nature of Silverblue. For that reason, I think this post would still show it's value.
 
