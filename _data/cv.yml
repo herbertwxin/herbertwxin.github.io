@@ -22,7 +22,8 @@
       year: 2023
       description:
         - title: Tutor
-        - ECON1002 - Intro. Macro
+          contents:
+            - ECON1002 - Intro. Macro
 
 - title: Academic Interests
   type: nested_list

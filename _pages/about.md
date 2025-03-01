@@ -11,7 +11,7 @@ profile:
   more_info: >
     <p>821 PLC</p>
     <p>1415 Kincaid St</p>
-    <p>Eugene, Oregon 97405</p>
+    <p>Eugene, Oregon 97403</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
