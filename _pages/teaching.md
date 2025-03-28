@@ -11,7 +11,8 @@ nav_order: 6
 
 ### 2025
 
-Spring - EC201 (Intro. Mico)
+Spring - EC201 (Intro. Micro)
+Winter - EC201 (Intro. Micro)
 
 ### 2024
 
