@@ -147,11 +147,38 @@ pre {
   margin-bottom: 3rem;
 }
 
+/* Homepage profile image - larger and centered */
 .profile img {
   border-radius: 0.5rem;
-  max-width: 200px;
+  max-width: 280px;
   width: 100%;
   height: auto;
+}
+
+/* About page specific styling */
+.profile.float-right {
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  width: auto;
+  max-width: 300px;
+}
+
+.profile.float-right img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.profile .more-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.profile .more-info p {
+  margin: 0.25rem 0;
+  color: #4a5568;
 }
 
 .profile .profile-content {

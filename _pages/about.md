@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://cas.uoregon.edu/directory/economics-gtf/all/hxin'>University of Oregon</a>. Prince Lucien Campbell Hall (PLC) 821
+subtitle: <a href='https://cas.uoregon.edu/directory/economics-gtf/all/hxin'>University of Oregon</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>821 PLC</p>
+    <p>Prince Lucien Campbell Hall (PLC) 821</p>
     <p>1415 Kincaid St</p>
     <p>Eugene, Oregon 97403</p>
 
