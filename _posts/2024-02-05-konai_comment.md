@@ -23,7 +23,7 @@ This lack of incentive occurs even when the central government’s ultimate goal
 
 The aforementioned idea could be illustrated using my **mushroom-shaped flowchart**.
 
-![Mushroom Flowchart](/assets/img/Mushroom.png)
+<img src="/assets/img/Mushroom.png" alt="Mushroom Flowchart" style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
 
 As one could see from the chart, the local government has the ruling power towards the people, while its primary responsibility is not tied with the needs of people. Local government only has a secondary responsibility towards the populace, i.e. the people influence the central government, which governs the local government.
 
