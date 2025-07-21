@@ -1,0 +1,526 @@
+---
+---
+
+/* Custom Professional Styling - Inspired by edrub.in */
+
+/* Import Google Fonts - Professional Typography */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap");
+
+/* Base Typography - Smaller, Professional Fonts */
+:root {
+  /* Typography Variables */
+  --base-font-size: 14px;
+  --base-line-height: 1.5;
+  --heading-font-weight: 600;
+  --content-font-weight: 400;
+  --mono-font-weight: 400;
+
+  /* Professional Color Scheme - Subtle and Modern */
+  --primary-text: #2d3748;
+  --secondary-text: #4a5568;
+  --muted-text: #718096;
+  --accent-color: #2b6cb0;
+  --accent-hover: #2c5282;
+  --border-color: #e2e8f0;
+  --bg-subtle: #f7fafc;
+  --code-bg: #f1f3f4;
+
+  /* Dark mode variants */
+  --dark-primary-text: #f7fafc;
+  --dark-secondary-text: #e2e8f0;
+  --dark-muted-text: #a0aec0;
+  --dark-accent-color: #63b3ed;
+  --dark-accent-hover: #90cdf4;
+  --dark-border-color: #4a5568;
+  --dark-bg-subtle: #2d3748;
+  --dark-code-bg: #1a202c;
+
+  /* Spacing */
+  --content-max-width: 900px;
+  --section-spacing: 3rem;
+  --element-spacing: 1.5rem;
+}
+
+/* Override global typography */
+html {
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-weight: var(--content-font-weight);
+  color: var(--primary-text);
+  background-color: #ffffff;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--heading-font-weight);
+  color: var(--primary-text);
+  line-height: 1.3;
+  margin: 0 0 1rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+h5,
+h6 {
+  font-size: 1.125rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraph and content */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--secondary-text);
+}
+
+/* Links - Developer-like styling */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--accent-hover);
+    border-bottom-color: var(--accent-hover);
+    text-decoration: none;
+  }
+}
+
+/* Code and monospace */
+code,
+pre {
+  font-family: "JetBrains Mono", "Fira Code", Monaco, Consolas, monospace;
+  font-weight: var(--mono-font-weight);
+}
+
+code {
+  font-size: 0.875rem;
+  background-color: var(--code-bg);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  color: var(--primary-text);
+}
+
+pre {
+  font-size: 0.875rem;
+  background-color: var(--code-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+}
+
+/* Navigation - Minimalist */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 0;
+  box-shadow: none;
+
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--primary-text);
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--secondary-text);
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease;
+
+    &:hover,
+    &.active {
+      background-color: var(--bg-subtle);
+      color: var(--accent-color);
+    }
+  }
+}
+
+/* Content container - Better density */
+.container,
+.container-fluid {
+  max-width: var(--content-max-width);
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+/* Main content area */
+.post,
+.page-content {
+  padding: 2rem 0;
+
+  .post-header,
+  .page-header {
+    margin-bottom: var(--section-spacing);
+
+    .post-title,
+    .page-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--primary-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .post-description,
+    .page-description {
+      font-size: 1.125rem;
+      color: var(--muted-text);
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Professional profile section */
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: var(--section-spacing);
+
+  img {
+    border-radius: 0.5rem;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-content {
+    flex: 1;
+
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .profile-description {
+      font-size: 1.125rem;
+      color: var(--secondary-text);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      font-size: 0.9rem;
+      color: var(--muted-text);
+      margin-bottom: 1rem;
+
+      a {
+        color: var(--accent-color);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* Lists - Better spacing */
+ul,
+ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+
+  li {
+    margin-bottom: 0.25rem;
+    color: var(--secondary-text);
+    line-height: 1.5;
+  }
+}
+
+/* Tables - Clean and professional */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+
+  th,
+  td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  th {
+    font-weight: 600;
+    color: var(--primary-text);
+    background-color: var(--bg-subtle);
+  }
+
+  td {
+    color: var(--secondary-text);
+  }
+}
+
+/* Cards - Minimal and clean */
+.card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-text);
+  }
+
+  .card-text {
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+}
+
+/* Publications - Academic styling */
+.publications {
+  .bibliography {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--primary-text);
+        line-height: 1.4;
+      }
+
+      .author {
+        font-size: 0.9rem;
+        color: var(--secondary-text);
+        margin-bottom: 0.25rem;
+      }
+
+      .venue {
+        font-size: 0.9rem;
+        color: var(--muted-text);
+        font-style: italic;
+        margin-bottom: 0.5rem;
+      }
+
+      .links {
+        font-size: 0.85rem;
+
+        a {
+          margin-right: 0.75rem;
+          padding: 0.25rem 0.5rem;
+          border: 1px solid var(--border-color);
+          border-radius: 0.25rem;
+          color: var(--secondary-text);
+
+          &:hover {
+            border-color: var(--accent-color);
+            background-color: var(--bg-subtle);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Blog posts - Content density */
+.post-list {
+  .post-item {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+
+    .post-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+
+      a {
+        color: var(--primary-text);
+        border-bottom: none;
+
+        &:hover {
+          color: var(--accent-color);
+        }
+      }
+    }
+
+    .post-meta {
+      font-size: 0.85rem;
+      color: var(--muted-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .post-excerpt {
+      font-size: 0.95rem;
+      color: var(--secondary-text);
+      line-height: 1.5;
+    }
+  }
+}
+
+/* Footer - Minimal */
+footer {
+  margin-top: var(--section-spacing);
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  color: var(--muted-text);
+  text-align: center;
+
+  a {
+    color: var(--accent-color);
+    font-weight: 500;
+  }
+}
+
+/* Developer-like elements */
+.code-block {
+  position: relative;
+  margin: 1.5rem 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--border-color);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  :root {
+    --base-font-size: 14px;
+    --content-max-width: 100%;
+  }
+
+  .container,
+  .container-fluid {
+    padding: 0 1rem;
+  }
+
+  .profile {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      max-width: 150px;
+      align-self: center;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    .nav-link {
+      padding: 0.5rem;
+      margin: 0.125rem;
+    }
+  }
+}
+
+/* Dark mode support */
+html[data-theme="dark"] {
+  --primary-text: var(--dark-primary-text);
+  --secondary-text: var(--dark-secondary-text);
+  --muted-text: var(--dark-muted-text);
+  --accent-color: var(--dark-accent-color);
+  --accent-hover: var(--dark-accent-hover);
+  --border-color: var(--dark-border-color);
+  --bg-subtle: var(--dark-bg-subtle);
+  --code-bg: var(--dark-code-bg);
+
+  body {
+    background-color: #1a202c;
+    color: var(--dark-primary-text);
+  }
+
+  .navbar {
+    background-color: rgba(26, 32, 44, 0.95);
+  }
+
+  .card {
+    background-color: #2d3748;
+  }
+}
+
+/* Additional professional touches */
+::selection {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+*:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+* {
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
