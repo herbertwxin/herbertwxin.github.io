@@ -270,6 +270,21 @@ table th {
   border-bottom: 1px solid #e2e8f0;
 }
 
+/* Remove green blocks around CV dates */
+.cv .badge {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 1rem !important;
+  color: #2d3748 !important;
+  font-weight: 500 !important;
+}
+
+.cv .table-cv .badge {
+  min-width: auto !important;
+  text-transform: none !important;
+}
+
 /* Publications - Academic styling */
 .publications .bibliography {
   list-style: none;
