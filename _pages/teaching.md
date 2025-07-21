@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-# University of Oregon
+# <a href="https://economics.uoregon.edu/" target="_blank" style="color: #154734; text-decoration: none;">University of Oregon</a>
 
 ### 2025
 
@@ -18,7 +18,11 @@ Winter - EC201 (Intro. Micro)
 
 Fall - EC101
 
-# University of Sydney
+---
+
+<br>
+
+# <a href="https://www.sydney.edu.au/arts/schools/school-of-economics.html" target="_blank" style="color: #E64100; text-decoration: none;">University of Sydney</a>
 
 ### 2024
 
