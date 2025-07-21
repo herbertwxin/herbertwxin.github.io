@@ -226,6 +226,23 @@ table th {
   line-height: 1.5;
 }
 
+/* CV - Remove card borders and make sections clean */
+.cv .card {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.cv .card .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
 /* Publications - Academic styling */
 .publications .bibliography {
   list-style: none;
